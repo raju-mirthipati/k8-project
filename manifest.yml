@@ -21,12 +21,12 @@ kind: Service
 metadata:
   name: web-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     name: web
     end: frentend
   ports:
     - protocol: TCP
-      port: 8080
+      port: 80
       targetPort: 80  
       
