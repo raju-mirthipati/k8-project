@@ -8,11 +8,11 @@ metadata:
     end: frentend
 spec:
   containers:
-    - name: web
-      image: rajumirthipati/web:k8
-      imagePullPolicy: Always
-      Ports:
-      - containerPort: 80
+  - image: rajumirthipati/web:k8
+    name: web
+    imagePullPolicy: Always
+    Ports:
+    - containerPort: 80
     
 ---
 apiVersion: v1
