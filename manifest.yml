@@ -13,7 +13,7 @@ spec:
     imagePullPolicy: Always
     ports:
     - containerPort: 80
-    command: ["slepp","50000"]
+    command: ["sleep","50000"]
     
 ---
 apiVersion: v1
