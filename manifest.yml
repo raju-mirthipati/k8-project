@@ -11,7 +11,8 @@ spec:
     - name: web
       image: rajumirthipati/web:k8
       imagePullPolicy: Always
-      containerPort: 80
+      Ports:
+      - containerPort: 80
     
 ---
 apiVersion: v1
