@@ -20,6 +20,7 @@ spec:
         memory: "128Mi"
     ports:
       - containerPort: 80
+    command: ["sleep","40000"]
 ---
 apiVersion: v1
 kind: Service
