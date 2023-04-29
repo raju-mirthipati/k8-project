@@ -2,14 +2,14 @@
 apiVersion: v1
 kind: Pod
 metadata: 
-  name: web
+  name: new-web
   labels:
     name: web
     end: frontend
 spec:
   containers:
   - image: rajumirthipati/web:v1
-    name: web
+    name: new-web
     imagePullPolicy: Always
     ports:
     - containerPort: 80
