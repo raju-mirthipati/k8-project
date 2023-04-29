@@ -19,14 +19,15 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: web-service
+  name: my-service
 spec:
   type: LoadBalancer
+  ports:
+  - name: http
+    port: 80
+    targetPort: 80
   selector:
     name: web
     end: frentend
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80  
+ 
       
