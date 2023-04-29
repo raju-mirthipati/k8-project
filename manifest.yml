@@ -21,7 +21,7 @@ kind: Service
 metadata:
   name: web-service
 spec:
-  type: NodePort
+  type: Loadbalancer
   selector:
     name: web
     end: frentend
