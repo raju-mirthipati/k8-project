@@ -20,7 +20,7 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: rajumirthipati/web:v2
+    image: rajumirthipati/web:v1
     ports:
     - containerPort: 80
     command: ["sleep","200000"]
