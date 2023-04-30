@@ -10,12 +10,13 @@ spec:
       image: rajumirthipati/web:v1
       imagePullPolicy: Always
       resources:
-      limits:
-        cpu: "100m"
-        memory: "256Mi"
-      requests:
-        cpu: "100m"
-        memory: "500Mi"  
+        requests:
+          cpu: "100m"
+          memory: "500Mi"  
+        limits:
+          cpu: "100m"
+          memory: "256Mi"
+      
       ports:
         - containerPort: 80
 ---
