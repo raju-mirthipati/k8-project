@@ -21,7 +21,7 @@ metadata:
     tier: middile
 spec:
   containers:
-  - name: mongodb
+  - name: catalogue
     image: rajumirthipati/catalogue:v1
     imagePullPolicy: Always
     resources:
