@@ -16,7 +16,7 @@ metadata:
 spec:
   containers:
   - name: catalogue
-    image: rajumirthipati/catalogue:v1
+    image: rajumirthipati/catalogue:v2
     imagePullPolicy: Always
     resources:
       requests:
