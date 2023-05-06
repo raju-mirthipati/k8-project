@@ -1,0 +1,32 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ratings
+  labels:
+    name: ratings
+spec:
+  containers:
+  - image: rajumirthipati/ratings:v1
+    name: ratings
+    imagePullPolicy: Always
+    resources:
+      requests:
+        cpu: "100m"
+        memory: "100Mi"  
+      limits:
+        cpu: "100m"
+        memory: "500Mi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ratings
+spec:
+  selector:
+    name: ratings
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+---  
