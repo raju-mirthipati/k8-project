@@ -2,7 +2,7 @@ FROM mysql:5.7
 
 VOLUME /data
 
-ENV MYSQL_ALLOW_EMPTY_PASSWORD=yes \
+ENV MYSQL_ALLOW_EMPTY_PASSWORD=raju \
     MYSQL_DATABASE=cities \
     MYSQL_USER=shipping \
     MYSQL_PASSWORD=secret

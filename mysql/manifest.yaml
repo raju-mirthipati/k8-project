@@ -4,7 +4,7 @@ metadata:
   name: mysql-config
 data:
   MYSQL_DATABASE: "cities"
-  MYSQL_ROOT_PASSWORD: "raju"
+  MYSQL_ROOT_PASSWORD: "yes"
 ---
 apiVersion: v1
 kind: Secret
