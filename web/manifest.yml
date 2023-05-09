@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: nginx
-    image: rajumirthipati/web:v5
+    image: rajumirthipati/web:v6
     imagePullPolicy: Always
     resources:
       requests:
