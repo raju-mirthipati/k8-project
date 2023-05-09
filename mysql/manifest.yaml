@@ -27,6 +27,11 @@ spec:
   - name: mysql
     imagePullPolicy: Always
     image: rajumirthipati/mysql:v1
+    resources:
+      limits:
+        memory: "1Gi"
+      requests:
+        memory: "500Mi"
     envFrom:
     - configMapRef:
         name: mysql-config
@@ -35,3 +40,15 @@ spec:
     ports:
       - containerPort: 3306
 ---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql
+spec:
+  selector:
+    name: mysql
+    tier: db
+  ports:
+    - protocol: TCP
+      port: 3306
+      targetPort: 3306
