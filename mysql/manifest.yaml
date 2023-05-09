@@ -7,6 +7,15 @@ data:
   MYSQL_ROOT_PASSWORD: "raju"
 ---
 apiVersion: v1
+kind: Secret
+metadata:
+  name: mysql-secret
+type: Opaque
+data:
+  MYSQL_USER: c2hpcHBpbmc=
+  MYSQL_PASSWORD: c2VjcmV0
+---  
+apiVersion: v1
 kind: Pod
 metadata:
   name: mysql
