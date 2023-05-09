@@ -19,7 +19,7 @@ metadata:
 spec:
   containers:
   - name: mongodb
-    image: rajumirthipati/mongodb:v2
+    image: rajumirthipati/mongodb:v1
     imagePullPolicy: Always
     ports:
     - containerPort: 27017
