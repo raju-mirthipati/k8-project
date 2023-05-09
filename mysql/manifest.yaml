@@ -27,11 +27,6 @@ spec:
   - name: mysql
     imagePullPolicy: Always
     image: rajumirthipati/mysql:v1
-    resources:
-      limits:
-        memory: "1Gi"
-      requests:
-        memory: "500Mi"
     envFrom:
     - configMapRef:
         name: mysql-config

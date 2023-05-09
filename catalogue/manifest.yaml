@@ -24,7 +24,7 @@ spec:
         memory: "100Mi"  
       limits:
         cpu: "100m"
-        memory: "500Mi"
+        memory: "128Mi"
     envFrom:
     - configMapRef:
         name: catalogue-config      
