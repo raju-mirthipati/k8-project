@@ -32,8 +32,6 @@ spec:
         name: mysql-config
     - secretRef:
         name: mysql-secret
-    command: ["mysqld"]
-    args: ["--bind-address=0.0.0.0", "--user=mysql"]
     ports:
       - containerPort: 3306
 ---
